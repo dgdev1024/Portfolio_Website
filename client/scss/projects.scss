@@ -1,0 +1,170 @@
+.dwg-projects {
+    width: 100%;
+    overflow: auto;
+    background-color: $works-bg;
+    color: $works-text;
+
+    .dwg-projects-heading {
+        display: block;
+        width: 85%;
+        margin: 16px auto;
+        font-family: "Source Serif Pro", serif;
+        font-size: 40px;
+        text-align: center;
+        border-bottom: 2px solid $works-text;
+
+        @media #{$small-screen} {
+            font-size: 32px;
+            border-bottom: none;
+        }
+    }
+
+    .dwg-projects-subheading {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+        text-align: center;
+
+        @media #{$small-screen} {
+            font-size: 16px;
+        }
+
+        select {
+            display: inline-block;
+            padding: 4px 8px;
+            margin-left: 4px;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 18px;
+            background-color: $works-bg;
+            border: 2px solid $works-text;
+            border-radius: 4px;
+
+            @media #{$small-screen} {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .dwg-showcase-message {
+        text-align: center;
+    }
+
+    .dwg-showcase {
+        width: 620px;
+        margin: 16px auto;
+        border: 2px solid $works-text;
+        border-radius: 8px;
+
+        @media #{$small-screen} {
+            width: 85%;
+        }
+
+        .dwg-showcase-project {
+            img {
+                display: block;
+                width: 90%;
+                height: auto;
+                margin: 8px auto;
+            }
+
+            .dwg-showcase-project-name {
+                display: block;
+                margin: 16px 0px;
+                font-size: 32px;
+                font-weight: bold;
+                text-align: center;
+
+                @media #{$small-screen} {
+                    font-size: 24px;
+                }
+            }
+
+            .dwg-showcase-project-description {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 18px;
+                text-align: center;
+
+                @media #{$small-screen} {
+                    font-size: 16px;
+                }
+            }
+
+            .dwg-showcase-project-technologies {
+                display: block;
+                margin-bottom: 8px;
+                font-size: 18px;
+                font-style: italic;
+                text-align: center;
+
+                @media #{$small-screen} {
+                    font-size: 16px;
+                }
+            }
+
+            .dwg-showcase-project-link {
+                display: block;
+                margin: 8px;
+                padding: 4px;
+                background-color: transparent;
+                color: $works-text;
+                font-size: 24px;
+                text-align: center;
+                text-decoration: none;
+                border: 2px solid $works-text;
+                border-radius: 8px;
+
+                @media #{$small-screen} {
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: $works-bg-hover;
+                }
+            }
+        }
+
+        .dwg-showcase-button-group {
+            border-top: 2px solid $works-text;
+
+            .dwg-showcase-button {
+                display: inline-block;
+                width: 50%;
+                padding: 4px 0px;
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 24px;
+                color: $works-text;
+                background-color: $works-bg;
+                border: none;
+
+                @media #{$small-screen} {
+                    font-size: 18px;
+                }
+
+                &:hover {
+                    background-color: $works-bg-hover;
+                    cursor: pointer;
+                }
+                
+                &#prev {
+                    border-right: 1px solid $works-text;
+                    border-radius: 0px 0px 0px 8px;
+                }
+
+                &#next {
+                    border-left: 1px solid $works-text;
+                    border-radius: 0px 0px 8px 0px;
+                }
+
+                &:disabled {
+                    color: $about-text;
+
+                    &:hover {
+                        background-color: $works-bg;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

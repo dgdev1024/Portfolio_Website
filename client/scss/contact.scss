@@ -1,0 +1,119 @@
+.dwg-contact {
+    width: 100%;
+    overflow: auto;
+    background-color: $contact-bg;
+    color: $contact-text;
+
+    .dwg-contact-heading {
+        display: block;
+        width: 85%;
+        margin: 16px auto;
+        font-family: "Source Serif Pro", serif;
+        font-size: 40px;
+        text-align: center;
+        border-bottom: 2px solid $contact-text;
+
+        @media #{$small-screen} {
+            font-size: 32px;
+            border-bottom: none;
+        }
+    }
+
+    .dwg-contact-info {
+        float: left;
+        margin: 32px 5% 32px 10%;
+        width: 35%;
+        font-size: 18px;
+
+        @media #{$small-screen} {
+            float: none;
+            width: 85%;
+            margin: 16px auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        a {
+            color: $contact-text;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .dwg-contact-form {
+        float: left;
+        margin: 32px 10% 32px 5%;
+        width: 35%;
+
+        @media #{$small-screen} {
+            float: none;
+            width: 85%;
+            margin: 16px auto;
+            text-align: center;
+        }
+
+        .dwg-contact-form-element {
+            margin-bottom: 12px;
+
+            label {
+                display: block;
+                margin-bottom: 4px;
+                font-size: 18px;
+
+                @media #{$small-screen} {
+                    font-size: 16px;
+                }
+            }
+
+            .dwg-contact-form-input {
+                display: block;
+                width: 100%;
+                padding: 4px;
+                box-sizing: border-box;
+                font-family: "Source Code Pro", monospace;
+                font-size: 18px;
+                color: $contact-text;
+                background-color: $contact-bg;
+                border: 2px solid $contact-text;
+                border-radius: 4px;
+
+                @media #{$small-screen} {
+                    font-size: 16px;
+                }
+
+                &:hover, &:active {
+                    background-color: $contact-bg-hover;
+                }
+
+                &.dwg-contact-form-textarea {
+                    resize: none;
+                    height: 128px;
+                }
+            }
+        }
+
+        .dwg-contact-submit {
+            display: block;
+            width: 100%;
+            padding: 4px;
+            box-sizing: border-box;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 18px;
+            color: $contact-text;
+            background-color: $contact-bg;
+            border: 2px solid $contact-text;
+            border-radius: 4px;
+
+            @media #{$small-screen} {
+                font-size: 16px;
+            }
+
+            &:hover {
+                background-color: $contact-bg-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}

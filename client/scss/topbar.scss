@@ -1,0 +1,78 @@
+.dwg-topbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: $topbar-bg;
+    color: $topbar-text;
+    border-bottom: 2px solid $topbar-border;
+    z-index: 100;
+
+    .dwg-topbar-brand {
+        display: inline-block;
+        padding: 11px;
+        font-family: "Source Serif Pro", serif;
+        font-size: 25px;
+        text-decoration: none;
+        color: $topbar-text;
+
+        @media #{$small-screen} {
+            padding-top: 13px;
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: $topbar-text-hover;
+            cursor: pointer;
+        }
+    }
+
+    .dwg-topbar-menu-icon {
+        display: none;
+        float: none;
+
+        @media #{$small-screen} {
+            display: inline-block;
+            float: right;
+            font-size: 24px;
+            padding: 10px;
+
+            &:hover {
+                background-color: $topbar-bg-hover;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .dwg-topbar-menu {
+        float: right;
+
+        @media #{$small-screen} {
+            display: none;
+
+            &.dwg-topbar-toggled {
+                display: block;
+                float: none;
+            }
+        }
+
+        .dwg-topbar-menu-item {
+            display: inline-block;
+            padding: 16px;
+            font-size: 16px;
+            text-decoration: none;
+            color: $topbar-text;
+
+            &:hover {
+                background-color: $topbar-bg-hover;
+            }
+
+            &.dwg-topbar-no-hover:hover {
+                background-color: $topbar-bg;
+            }
+
+            @media #{$small-screen} {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.dwg-about-me {
+    width: 100%;
+    overflow: auto;
+    background-color: $about-bg;
+
+    img {
+        display: block;
+        float: left;
+        margin: 32px 5% 32px 10%;
+        box-sizing: border-box;
+        width: 35%;
+        height: auto;
+        border: 2px solid $about-text;
+        border-radius: 50%;
+
+        @media #{$small-screen} {
+            float: none;
+            width: 75%;
+            max-width: 320px;
+            margin: 16px auto;
+            height: auto;
+        }
+    }
+
+    .dwg-about-caption {
+        display: block;
+        float: left;
+        margin: 32px 10% 32px 5%;
+        width: 35%;
+        color: $about-text;
+
+        @media #{$small-screen} {
+            float: none;
+            width: 85%;
+            margin: 16px auto;
+            text-align: center;
+        }
+
+        .dwg-about-heading {
+            display: block;
+            font-family: "Source Serif Pro", serif;
+            font-size: 40px;
+            border-bottom: 2px solid $about-text;
+
+            @media #{$small-screen} {
+                font-size: 32px;
+                border-bottom: none;
+            }
+        }
+
+        p {
+            font-size: 18px;
+
+            @media #{$small-screen} {
+                font-size: 16px;
+            }
+
+            .dwg-social {
+                margin: 0px 4px;
+                font-size: 24px;
+                color: $about-text;
+            }
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        li {
+            font-size: 18px;
+
+            @media #{$small-screen} {
+                font-size: 16px;
+            }
+        }
+    }
+}

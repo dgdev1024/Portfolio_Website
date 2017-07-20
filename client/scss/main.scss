@@ -1,0 +1,60 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro|Source+Serif+Pro');
+
+// Media Queries
+$small-screen:      "only screen and (max-width: 799px)";
+
+// Topbar Colors
+$topbar-bg:         #56351E;
+$topbar-bg-hover:   #654732;
+$topbar-text:       #F4B481;
+$topbar-text-hover: #F8D0B0;
+$topbar-border:     #180F09;
+
+// About Me Dialog
+$about-bg:          #2F4858;
+$about-bg-hover:    #677985;
+$about-text:        #ECEEEF;
+
+// Works Dialog
+$works-bg:          #FCC459;
+$works-bg-hover:    #E6AE43;
+$works-text:        #453514;
+
+// Contact Dialog
+$contact-bg:        #B33F32;
+$contact-bg-hover:  #C95548;
+$contact-text:      #EECCC8;
+
+// Footer
+$footer-bg:         #555555;
+$footer-text:       #CCCCCC;
+
+html, body, #content, #app {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: $about-bg;
+
+    @import "./topbar.scss";
+    @import "./intro.scss";
+    @import "./about.scss";
+    @import "./projects.scss";
+    @import "./contact.scss";
+
+    .dwg-footer {
+        padding: 12px 0px;
+        background-color: $footer-bg;
+        color: $footer-text;
+        text-align: center;
+        font-size: 18px;
+
+        @media #{$small-screen} {
+            font-size: 16px;
+        }
+    }
+}
